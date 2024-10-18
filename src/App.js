@@ -23,7 +23,7 @@ function App() {
     <HomeScreen 
     bold={`Questions? Let’s talk `}
     desc={"Contact us through our 24/7 live chat.We’re always happy to help!"}
-    hsImg={"../assets/GIF.png"}
+    hsImg={"../assets/questions-gif.gif"}
     />
     <Footer />
     </>

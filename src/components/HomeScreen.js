@@ -15,7 +15,7 @@ function HomeScreen({bold, desc, hsImg}) {
             <button className='hs-button'>Get Started</button>
         </div>
         <div className="hs-right">
-            <img src={hsImg} alt="" />
+            <img src={hsImg} alt="" className='hs-right-img'/>
         </div>
     </div>
     </div>
