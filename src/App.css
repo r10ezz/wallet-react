@@ -79,6 +79,8 @@
   color: #333333;
   font-size: 18px;
   padding: 9px 38px;
+  cursor: pointer;
+  border: none;
 }
 
 .hs-right{
@@ -247,4 +249,12 @@
 .hs-right-img{
   width: 500px;
   border-radius: 15px;
+}
+
+.hs-button:hover{
+  background-color: #E8BF59;
+}
+
+.log-in:hover{
+  background-color: #A490E5;
 }
