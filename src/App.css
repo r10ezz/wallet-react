@@ -126,6 +126,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  margin-top: 16px;
 }
 
 .mini-bold{
@@ -151,6 +152,7 @@
   display: flex;
   justify-content: space-around;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .tm-main{
@@ -257,4 +259,103 @@
 
 .log-in:hover{
   background-color: #A490E5;
+}
+
+@media (max-width: 1180px){
+  .hs-right img{
+    width: 400px;
+    height: 346px;
+  }
+  .hs-bold{
+    font-size: 48px;
+  }
+  .hs-desc{
+    font-size: 14px;
+  }
+  .brands-img{
+    width: 600px;
+  }
+  .ss-img{
+    width: 900px;
+  }
+  .f-bot{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .f-email{
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .f-links{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 976px){
+  .home-screen{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hs-left{
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .hs-right{
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .ss-img{
+    width: 530px;
+  }
+  .ss-card{
+    height: 340px;
+  }
+  .brands-img{
+    width: 530px;
+  }
+  .tm-card{
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 532px){
+.f-email-input{width: 100%;
+}
+.log-in{
+  width: 100%;
+}
+.f-links{
+  flex-direction: column-reverse;
+}
+.h-buttons{
+  display: none;
+}
+.brands-img{
+  width: 340px;
+}
+.ss-img{
+  width: 340px;
+}
+.hs-right-img{
+  width: 335px !important;
+  height: 299px !important  ;
+}
+.ss-main{
+  padding: 40px;
+}
+.ss-card{
+  height: 200px;
+}
+.cs-main{
+  padding: 50px 40px;
+}
+.tm-main{
+  padding: 30px 40px;
+}
+.tm-card{
+  padding: 20px;
+}
 }
