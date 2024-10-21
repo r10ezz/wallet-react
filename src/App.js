@@ -13,7 +13,7 @@ function App() {
     <Header />
     <HomeScreen 
     bold={"SaaS Landing Page Template"}
-    desc={"This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"}
+    desc={"This is a template Figma file, turned into code using React. Learn more at"}
     hsImg={"../assets/main.png"}
     />
     <Brands />
