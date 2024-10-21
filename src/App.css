@@ -319,6 +319,9 @@
   .tm-card{
     padding: 40px 60px;
   }
+  .main-wrapper{
+    padding: 40px;
+  }
 }
 
 @media (max-width: 532px){
