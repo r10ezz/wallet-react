@@ -325,7 +325,8 @@
 }
 
 @media (max-width: 532px){
-.f-email-input{width: 100%;
+.f-email-input{
+  width: 100%;
 }
 .log-in{
   width: 100%;
@@ -364,4 +365,79 @@
 .hs-bold{
   font-size: 38px;
 }
+.form-container{
+  padding: 40px 30px !important;
+}
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 16px;
+  background-color: rgb(50, 54, 57);
+  padding: 40px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 94%;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-field:focus {
+  box-shadow: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-link {
+  color: #E8BF59;
+  text-decoration: underline;
+}
+
+.terms-link:hover {
+  color: #F8D57E;
+}
+
+.submit-button {
+  padding: 10px 16px;
+  background-color: #E8BF59;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #F8D57E;
+}
+
+.form-wrapper {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2B2B2B;
+}
+.error{
+color: red;
+font-size: 14px;
+font-weight: 200;
+height: 20px; /* Adjust the height as needed */
+line-height: 20px; /* Center the text vertically */
 }
