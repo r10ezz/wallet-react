@@ -6,6 +6,7 @@ import Header from './components/Header';
 import HomeScreen from './components/HomeScreen';
 import Ss from './components/Ss';
 import Testimonial from './components/Testimonial';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
     desc={"Contact us through our 24/7 live chat.We’re always happy to help!"}
     hsImg={"../assets/questions-gif.gif"}
     />
+      <Form />
     <Footer />
     </>
   );
