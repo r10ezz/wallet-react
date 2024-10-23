@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 
-const Form = ({ buttonName }) => {
+const SignupForm = ({ buttonName }) => {
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
@@ -9,19 +10,23 @@ const Form = ({ buttonName }) => {
 
     const validate = () => {
         const newErrors = {};
-        
+
+        if (!username) {
+            newErrors.username = 'Username is required';
+        }
+
         if (!email) {
             newErrors.email = 'Email is required';
         } else if (!/\S+@\S+\.\S+/.test(email)) {
             newErrors.email = 'Email is invalid';
         }
-        
+
         if (!password) {
             newErrors.password = 'Password is required';
         } else if (password.length < 6) {
             newErrors.password = 'Password must be at least 6 characters';
         }
-        
+
         if (!repeatPassword) {
             newErrors.repeatPassword = 'Please repeat your password';
         } else if (repeatPassword !== password) {
@@ -35,7 +40,7 @@ const Form = ({ buttonName }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validate()) {
-            console.log('Form submitted:', { email, password });
+            console.log('Signup form submitted:', { username, email, password });
         }
     };
 
@@ -43,9 +48,22 @@ const Form = ({ buttonName }) => {
         <div className="form-wrapper">
             <form className="form-container" onSubmit={handleSubmit} noValidate>
                 <div className="input-group">
-                    <label htmlFor="email2">Your email</label>
+                    <label htmlFor="username">Username</label>
                     <input
-                        id="email2"
+                        id="username"
+                        type="text"
+                        placeholder="Your username"
+                        required
+                        className="input-field"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                    />
+                    {errors.username && <span className='error'>{errors.username}</span>}
+                </div>
+                <div className="input-group">
+                    <label htmlFor="email">Your email</label>
+                    <input
+                        id="email"
                         type="email"
                         placeholder="name@domain.com"
                         required
@@ -56,9 +74,9 @@ const Form = ({ buttonName }) => {
                     {errors.email && <span className='error'>{errors.email}</span>}
                 </div>
                 <div className="input-group">
-                    <label htmlFor="password2">Your password</label>
+                    <label htmlFor="password">Your password</label>
                     <input
-                        id="password2"
+                        id="password"
                         type="password"
                         required
                         className="input-field"
@@ -89,13 +107,12 @@ const Form = ({ buttonName }) => {
                     </label>
                 </div>
                 <button type="submit" className="submit-button">{buttonName}</button>
-                
                 <div className="login-prompt">
-                    <p>Do not have an account? <Link to="/signup" className="login-link">Sign Up</Link></p>
+                    <p>Already have an account? <Link to="/login" className="login-link">Log in</Link></p>
                 </div>
             </form>
         </div>
     );
 };
 
-export default Form;
+export default SignupForm;

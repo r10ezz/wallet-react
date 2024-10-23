@@ -438,6 +438,22 @@
 color: red;
 font-size: 14px;
 font-weight: 200;
-height: 20px; /* Adjust the height as needed */
-line-height: 20px; /* Center the text vertically */
+height: 20px; 
+line-height: 20px; 
+}
+
+.login-prompt {
+  text-align: center; 
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.login-link {
+  color: #E8BF59; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline; 
 }

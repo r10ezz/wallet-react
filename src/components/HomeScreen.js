@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomeScreen({bold, desc, hsImg}) {
   return (
@@ -12,7 +13,7 @@ function HomeScreen({bold, desc, hsImg}) {
             <div className="hs-desc">
             {desc}
             </div>
-            <button className='hs-button'>Get Started</button>
+            <Link to="/signup"><button className='hs-button'>Get Started</button></Link>
         </div>
         <div className="hs-right">
             <img src={hsImg} alt="" className='hs-right-img'/>
