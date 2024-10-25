@@ -439,7 +439,7 @@ color: red;
 font-size: 14px;
 font-weight: 200;
 height: 20px; 
-line-height: 20px; 
+line-height: 20px;
 }
 
 .login-prompt {
@@ -450,10 +450,44 @@ line-height: 20px;
 
 .login-link {
   color: #E8BF59; 
-  text-decoration: none;
+  text-decoration: none; 
   cursor: pointer;
 }
 
 .login-link:hover {
   text-decoration: underline; 
+}
+
+.tnc-main{
+  display: flex;
+  flex-direction: column;
+  padding: 0 120px;
+  background-color: #2B2B2B;
+}
+
+.tnc-header, .tnc-subheader{
+  display: flex;
+  justify-content: center;
+}
+
+.tnc-header{
+  text-align: center;
+}
+
+.tnc-subheader{
+  margin-bottom: 36px;
+}
+
+.tnc-bold{
+  margin-bottom: 4px;
+}
+
+.tnc-desc{
+  margin-bottom: 24px;
+}
+
+@media(max-width: 620px){
+  .tnc-main{
+    padding: 0 40px;
+  }
 }

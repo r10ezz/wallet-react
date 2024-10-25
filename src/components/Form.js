@@ -50,6 +50,7 @@ const Form = ({ buttonName }) => {
                         placeholder="name@domain.com"
                         required
                         className="input-field"
+                        autoComplete='off'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
@@ -62,6 +63,7 @@ const Form = ({ buttonName }) => {
                         type="password"
                         required
                         className="input-field"
+                        autoComplete='on'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
@@ -74,6 +76,7 @@ const Form = ({ buttonName }) => {
                         type="password"
                         required
                         className="input-field"
+                        autoComplete='off'
                         value={repeatPassword}
                         onChange={(e) => setRepeatPassword(e.target.value)}
                     />
@@ -83,9 +86,9 @@ const Form = ({ buttonName }) => {
                     <input type="checkbox" id="agree" required />
                     <label htmlFor="agree">
                         I agree with the&nbsp;
-                        <a href="#" className="terms-link">
+                        <Link to="/terms"><span href="#" className="terms-link">
                             terms and conditions
-                        </a>
+                        </span></Link>
                     </label>
                 </div>
                 <button type="submit" className="submit-button">{buttonName}</button>
