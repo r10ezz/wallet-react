@@ -463,6 +463,7 @@ line-height: 20px;
   flex-direction: column;
   padding: 0 120px;
   background-color: #2B2B2B;
+  color: #fafafa
 }
 
 .tnc-header, .tnc-subheader{
