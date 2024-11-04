@@ -1,4 +1,4 @@
-# Wallet React Landing Page README
+# Wallet React Landing Page
 
 ## Overview
 
@@ -74,7 +74,7 @@ For any inquiries or feedback, please contact:
 
 - **Raj Singh**
 - **Email**: rajsingh5810@gmail.com
-- **GitHub**: [yourusername](https://github.com/r10ezz)
+- **GitHub**: [r10ezz](https://github.com/r10ezz)
 
 ---
 
