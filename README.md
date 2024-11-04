@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Wallet React Landing Page README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This repository contains the source code for a responsive landing page created using HTML, CSS, React, and Bootstrap, based on a design from Figma. The landing page is optimized for both desktop and mobile views and showcases a modern and user-friendly interface.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Responsive Design**: Adapts seamlessly to various screen sizes using Bootstrap's grid system.
+- **Styled Components**: Custom styles implemented with CSS for a unique look, while adhering to the design specifications from Figma.
+- **React Components**: Modular components for easy maintenance and scalability.
+- **Cross-Browser Compatibility**: Ensures consistent look and functionality across all major browsers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **HTML**: Structure of the web page.
+- **CSS**: Styling for layout and design.
+- **React**: JavaScript library for building user interfaces.
+- **Bootstrap**: Frontend framework for responsive design.
+- **Figma**: Design tool used to create the layout and visual elements.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with the landing page, follow these steps:
 
-### `npm run build`
+1. **Clone the repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/r10ezz/wallet-react.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navigate to the project directory**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd project-name
+   ```
 
-### `npm run eject`
+3. **Install dependencies**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start the development server**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The landing page will be available at `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Modify the content and styling as needed to fit your brand or project requirements.
+- Ensure that any assets (images, icons) are placed in the correct directories as referenced in the code.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Figma Design
 
-### Code Splitting
+Refer to the Figma link for design specifications and layout details. Make sure to adhere to the styles and components used in the design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[View Figma Design](https://www.figma.com/community/file/1091046863319888542/saas-landing-page-template-landing-page-template-ready-to-export-to-html-landing-page-for-saas)
 
-### Analyzing the Bundle Size
+## Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Feel free to contribute by opening issues or submitting pull requests. All contributions are welcome!
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For any inquiries or feedback, please contact:
 
-### Deployment
+- **Raj Singh**
+- **Email**: rajsingh5810@gmail.com
+- **GitHub**: [yourusername](https://github.com/r10ezz)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out this landing page! Enjoy building and customizing it to suit your needs.
